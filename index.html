@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculator App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body class="th1-main-background">
+  <div class="overcontainer">
+    <div class="container-top th1-text">
+      <h2>calc</h2>
+      <div class="radio-wrapper th1-other-background">
+        <p>THEME</p>
+        <p class="numbers">1 2 3</p>
+        <input type="radio" name="event" class="th1 themes" checked id="radio-th1" />
+        <label for="radio-th1"></label>
+
+        <input type="radio" name="event" class="th2 themes" id="radio-th2" />
+        <label for="radio-th2"></label>
+
+        <input type="radio" name="event" class="th3 themes" id="radio-th3" />
+        <label for="radio-th3"></label>
+      </div>
+    </div>
+    <div class="container-display th1-display-background th1-text">
+      <h1 class="display-input">0</h1>
+      <h3 class="display-action">|</h3>
+    </div>
+    <div class="container-btn th1-other-background">
+      <button type="button" name="button" class="btn btn-0 btn-main btn-th1-main">0</button>
+      <button type="button" name="button" class="btn btn-1 btn-main btn-th1-main">1</button>
+      <button type="button" name="button" class="btn btn-2 btn-main btn-th1-main">2</button>
+      <button type="button" name="button" class="btn btn-3 btn-main btn-th1-main">3</button>
+      <button type="button" name="button" class="btn btn-4 btn-main btn-th1-main">4</button>
+      <button type="button" name="button" class="btn btn-5 btn-main btn-th1-main">5</button>
+      <button type="button" name="button" class="btn btn-6 btn-main btn-th1-main">6</button>
+      <button type="button" name="button" class="btn btn-7 btn-main btn-th1-main">7</button>
+      <button type="button" name="button" class="btn btn-8 btn-main btn-th1-main">8</button>
+      <button type="button" name="button" class="btn btn-9 btn-main btn-th1-main">9</button>
+      <button type="button" name="button" class="btn btn-dot btn-main btn-th1-main">.</button>
+      <button type="button" name="button" class="btn btn-div btn-main btn-th1-main">/</button>
+      <button type="button" name="button" class="btn btn-mul btn-main btn-th1-main">x</button>
+      <button type="button" name="button" class="btn btn-sub btn-main btn-th1-main">-</button>
+      <button type="button" name="button" class="btn btn-add btn-main btn-th1-main">+</button>
+      <button type="button" name="button" class="btn btn-del btn-other1 btn-th1-rstdel">DEL</button>
+      <button type="button" name="button" class="btn btn-reset btn-other1 btn-th1-rstdel">RESET</button>
+      <button type="button" name="button" class="btn btn-equals btn-other2 btn-th1-eqls">=</button>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src = "index.js"></script>
+</body>
+</html>

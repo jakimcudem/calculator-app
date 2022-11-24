@@ -1,0 +1,413 @@
+body {
+  margin: 0;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  font-family: "League Spartan";
+}
+
+.overcontainer {
+  display: grid;
+  height: 80vh;
+  min-height: 600px;
+  width: 40%;
+  min-width: 325px;
+  max-width: 600px;
+  grid-template-columns: auto;
+  grid-template-rows: 40px 20% 4fr;
+  place-items: stretch;
+  place-self: center;
+  gap: 5px;
+}
+
+.container-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0;
+}
+
+.container-top h2 {
+  height: 30px;
+  margin: 0;
+  align-self: end;
+  font-size: 2rem;
+}
+
+/* theme selector */
+.radio-wrapper {
+  place-self: end;
+  width: 100px;
+  height: 30px;
+  vertical-align: middle;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  position: relative;
+  margin-left: 1%;
+}
+
+.radio-wrapper p {
+  transform: translate(-80px, -5px);
+}
+
+.radio-wrapper .numbers {
+  transform: translate(16px, -70px);
+  letter-spacing: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.th1+label {
+  display: inline-block;
+  top: 10%;
+  left:7%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+}
+
+.th1:checked+label {
+  display: inline-block;
+  top: 10%;
+  left: 7%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.th2+label {
+  display: inline-block;
+  top: 10%;
+  left: 38%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.th2:checked+label {
+  display: inline-block;
+  top: 10%;
+  left: 38%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.th3+label {
+  display: inline-block;
+  top: 10%;
+  left: 70%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+}
+
+.th3:checked+label {
+  display: inline-block;
+  top: 10%;
+  left: 70%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.container-display {
+  margin-bottom: 0;
+  margin-top: 30px;
+  background-color: grey;
+  border-radius: 15px;
+  padding: 20px;
+  display: grid;
+}
+
+.container-display h1 {
+  place-self: center end;
+  display:inline-block;
+  margin: 0;
+  transform: translate(0, 15px);
+}
+
+.container-display h3 {
+  place-self: center end;
+  display:inline-block;
+  margin: 0;
+  transform: translate(0, 15px);
+}
+
+.container-btn {
+  margin-top: 20px;
+  background-color: grey;
+  border-radius: 2%;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 5% 5%;
+  grid-template-areas:
+    "btn-7 btn-8 btn-9 btn-del"
+    "btn-4 btn-5 btn-6 btn-add"
+    "btn-1 btn-2 btn-3 btn-sub"
+    "btn-dot btn-0 btn-div btn-mul"
+    "btn-reset btn-reset btn-equals btn-equals";
+}
+
+.btn {
+  font-family: "League Spartan";
+  font-size: 32px;
+  border: none;
+  border-radius: 10px;
+  align-self: stretch;
+  padding: 0;
+  min-width: 30px;
+  min-height: 40px;
+}
+
+.btn-del {
+  font-size: 20px;
+}
+
+.btn-reset {
+  font-size: 20px;
+}
+
+.btn:active {
+  box-shadow: 0 0 #000;
+  transform: translateY(4px);
+}
+
+.btn-0 {
+  grid-area: btn-0;
+}
+
+.btn-1 {
+  grid-area: btn-1;
+}
+
+.btn-2 {
+  grid-area: btn-2;
+}
+
+.btn-3 {
+  grid-area: btn-3;
+}
+
+.btn-4 {
+  grid-area: btn-4;
+}
+
+.btn-5 {
+  grid-area: btn-5;
+}
+
+.btn-6 {
+  grid-area: btn-6;
+}
+
+.btn-7 {
+  grid-area: btn-7;
+}
+
+.btn-8 {
+  grid-area: btn-8;
+}
+
+.btn-9 {
+  grid-area: btn-9;
+}
+
+.btn-del {
+  grid-area: btn-del;
+}
+
+.btn-add {
+  grid-area: btn-add;
+}
+
+.btn-sub {
+  grid-area: btn-sub;
+}
+
+.btn-mul {
+  grid-area: btn-mul;
+}
+
+.btn-div {
+  grid-area: btn-div;
+}
+
+.btn-dot {
+  grid-area: btn-dot;
+}
+
+.btn-equals {
+  grid-area: btn-equals;
+}
+
+.btn-reset {
+  grid-area: btn-reset;
+}
+
+/* themes */
+
+/* theme 1 (default)*/
+
+.th1-text {
+  color: #fff;
+}
+
+.th1-main-background {
+  background-color: hsl(222, 26%, 31%);
+}
+
+.th1-other-background {
+  background-color: hsl(223, 31%, 20%);
+}
+
+.th1-display-background {
+  background-color: hsl(224, 36%, 15%);
+}
+
+.th1:checked+label {
+  background-color: hsl(6, 63%, 50%);
+}
+
+.btn-th1-rstdel {
+  color: #000;
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 4px hsl(224, 28%, 35%);
+}
+
+.btn-th1-rstdel:active, .btn-th1-rstdel:hover {
+  background-color: #a2b3e1;
+}
+
+.btn-th1-eqls {
+   background-color: hsl(6, 63%, 50%);
+  color: #000;
+  box-shadow: 0 4px hsl(6, 70%, 34%);
+}
+
+.btn-th1-eqls:active, .btn-th1-eqls:hover {
+  background-color: #f96c5b;
+}
+
+.btn-th1-main {
+  color: #000;
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: 0 4px hsl(28, 16%, 65%);
+}
+
+.btn-th1-main:active, .btn-th1-main:hover, .th1:hover+label{
+  background-color: #fff;
+}
+
+/* theme 2 */
+
+.th2-text {
+  color: #000;
+}
+
+.th2-main-background {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.th2-other-background {
+  background-color: hsl(0, 5%, 81%);
+}
+
+.th2-display-background {
+  background-color: hsl(0, 0%, 93%);
+}
+
+.th2:checked+label {
+  background-color: hsl(25, 98%, 40%);
+}
+
+.btn-th2-rstdel {
+  color: #000;
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0 4px hsl(185, 58%, 25%);
+}
+
+.btn-th2-rstdel:active, .btn-th2-rstdel:hover {
+  background-color: #62b5bd;
+}
+
+.btn-th2-eqls {
+   background-color: hsl(25, 98%, 40%);
+  color: #000;
+  box-shadow: 0 4px hsl(25, 99%, 27%);
+}
+
+.btn-th2-eqls:active, .btn-th2-eqls:hover {
+  background-color: #ff8b38;
+}
+
+.btn-th2-main {
+  color: #000;
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: 0 4px hsl(35, 11%, 61%);
+}
+
+.btn-th2-main:active, .btn-th2-main:hover, .th2:hover+label{
+  background-color: #fff;
+}
+
+/* theme 3 */
+
+.th3-text {
+  color: #ffe839;
+}
+
+.th3-main-background {
+  background-color: hsl(268, 75%, 9%);
+}
+
+.th3-other-background {
+  background-color: hsl(268, 71%, 12%);
+}
+
+.th3-display-background {
+  background-color: hsl(268, 71%, 12%);
+}
+
+.th3:checked+label {
+  background-color: hsl(176, 100%, 44%);
+}
+
+.btn-th3-rstdel {
+  color: #000;
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0 4px hsl(285, 91%, 52%);
+}
+
+.btn-th3-rstdel:active, .btn-th3-rstdel:hover {
+  background-color: #8631b0;
+}
+
+.btn-th3-eqls {
+   background-color: hsl(176, 100%, 44%);
+  color: #000;
+  box-shadow: 0 4px hsl(177, 92%, 70%);
+}
+
+.btn-th3-eqls:active, .btn-th3-eqls:hover {
+  background-color: #94fff9;
+}
+
+.btn-th3-main {
+  color: #000;
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0 4px hsl(290, 70%, 36%);
+}
+
+.btn-th3-main:active, .btn-th3-main:hover, .th3:hover+label{
+  background-color: #94fff9;
+}
